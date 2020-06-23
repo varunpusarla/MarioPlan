@@ -1,6 +1,8 @@
 export const createProject =(project)=>{
-    return{
-        type:'ADD_PROJECT',
-        project:project
+    return(dispatch, getState)=>{
+        dispatch({type:'CREATE_PROJECT',project})
+      
     }
 }
+
+//export default createProject
